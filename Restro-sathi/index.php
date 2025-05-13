@@ -15,7 +15,7 @@ $sql_query = "insert into tblbookings(bookingNo,fullName,emailId,phoneNumber,boo
 echo $sql_query;
 $query=mysqli_query($con, $sql_query);
 if($query){
-echo '<script>alert("Your order sent successfully. Booking number is "+"'.$bno.'")</script>';
+echo '<script>alert("Your request sent successfully. Booking number is "+"'.$bno.'. Save it for future purposes.")</script>';
 echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
 } else {
 echo "<script>alert('Something went wrong. Please try again.');</script>";
